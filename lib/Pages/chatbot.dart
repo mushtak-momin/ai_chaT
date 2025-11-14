@@ -23,12 +23,9 @@ class _ChatbotState extends State<Chatbot>  {
           child:Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-            Center(
-              child: Text(
-                'Welcome to AI Chatbot',
-                style: Theme.of(context).textTheme.titleLarge,
-              ),
-            ),
+              ElevatedButton(
+                style: Theme.of(context).elevatedButtonTheme.style,
+                onPressed: (){}, child: Expanded(child: Text("Start Chatting")))
             ],
           ),
         )

@@ -19,6 +19,24 @@ class MyApp extends StatelessWidget {
         data: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
          scaffoldBackgroundColor: Colors.white,
+         buttonTheme: ButtonThemeData(
+          buttonColor: Color.fromARGB(128, 128, 128, 128),
+          textTheme: ButtonTextTheme.primary,
+         ),
+         elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(255, 179, 216, 147),
+            foregroundColor: Colors.black,
+            textStyle: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+            padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(30),
+            ),
+          ),
+         ),
          textTheme: TextTheme(
           titleLarge: TextStyle(
             color: const Color.fromARGB(255, 3, 2, 6),
